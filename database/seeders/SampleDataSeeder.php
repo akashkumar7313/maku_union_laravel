@@ -13,8 +13,9 @@ class SampleDataSeeder extends Seeder
             ContentSeeder::class,
             AdminSeeder::class,
             DemoSeeder::class,
+            ExtendedDemoSeeder::class,
         ]);
 
-        $this->command?->info('पूरा सैंपल डेटा तैयार है — सेटिंग्स, सामग्री, सदस्य, भुगतान, शिकायतें, समाचार, गैलरी, टीम, शाखाएँ और ऑडिट लॉग।');
+        $this->command?->info('पूरा सैंपल डेटा तैयार है — सेटिंग्स, सामग्री, सदस्य, भुगतान, शिकायतें, समाचार, गैलरी, टीम, शाखाएँ, अनुवाद और ऑडिट लॉग।');
     }
 }
