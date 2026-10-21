@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#173a5e"/><stop offset="1" stop-color="#2f6f9f"/></linearGradient>
+</defs>
+<rect width="1200" height="700" fill="url(#g)"/>
+<circle cx="1200" cy="0" r="700" fill="#ffffff" opacity="0.05"/>
+<circle cx="0" cy="700" r="700" fill="#000000" opacity="0.10"/>
+<text x="50%" y="48%" fill="#ffffff" opacity="0.16" font-family="sans-serif" font-size="700" font-weight="700" text-anchor="middle">स</text>
+<text x="50%" y="54%" fill="#ffffff" font-family="sans-serif" font-size="39" font-weight="600" text-anchor="middle">संगठन विस्तार</text>
+<text x="50%" y="61%" fill="#ffffff" opacity="0.75" font-family="sans-serif" font-size="39" text-anchor="middle">MAKU · मिर्जापुर</text>
+</svg>

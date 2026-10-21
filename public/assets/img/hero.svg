@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice" role="img" aria-label="श्रमिकों का चित्र">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16345c"/>
+      <stop offset=".55" stop-color="#1f4f6e"/>
+      <stop offset="1" stop-color="#0b1c33"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd479"/>
+      <stop offset="1" stop-color="#f08a24"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123a2a"/>
+      <stop offset="1" stop-color="#0b1c33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#sky)"/>
+  <circle cx="1280" cy="190" r="110" fill="url(#sun)" opacity=".9"/>
+  <g fill="#ffffff" opacity=".06">
+    <circle cx="200" cy="150" r="90"/>
+    <circle cx="340" cy="120" r="60"/>
+    <circle cx="1050" cy="110" r="70"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="2" opacity=".14" fill="none">
+    <path d="M1180 70v560"/>
+    <path d="M1010 120h340"/>
+    <path d="M1010 120l170-70"/>
+    <path d="M1180 70l140 50"/>
+    <path d="M1120 150h60"/>
+    <path d="M1100 190h100"/>
+  </g>
+  <g fill="#0b1c33" opacity=".55">
+    <path d="M0 470h1600v230H0z"/>
+  </g>
+  <rect y="520" width="1600" height="180" fill="url(#ground)" opacity=".85"/>
+  <g fill="#081627">
+    <path d="M250 520c-10-60 6-120 22-150l18 4c-6 38-10 96-2 146z"/>
+    <circle cx="300" cy="330" r="30"/>
+    <path d="M270 360h64l18 90-24 8-14-60-12 70-26-4z"/>
+    <path d="M330 372l70 30-10 22-64-22z"/>
+    <path d="M260 456l-24 104h28l20-78 18 78h28l-18-108z"/>
+    <path d="M255 320l48-18 16 26-52 14z"/>
+  </g>
+  <g fill="#081627">
+    <path d="M700 520c-14-74 0-148 24-190l22 6c-10 48-16 118-6 184z"/>
+    <circle cx="760" cy="286" r="36"/>
+    <path d="M722 326h78l24 112-30 8-16-74-14 84-32-4z"/>
+    <path d="M800 340l98 40-14 26-88-30z"/>
+    <path d="M708 436l-30 84h34l26-64 22 64h34l-24-88z"/>
+    <path d="M716 274l58-22 20 32-64 18z"/>
+  </g>
+  <g fill="#081627">
+    <path d="M1060 520c-8-54 4-108 18-138l16 4c-6 34-8 86-2 134z"/>
+    <circle cx="1100" cy="354" r="26"/>
+    <path d="M1074 380h54l16 82-22 6-12-54-10 62-24-4z"/>
+    <path d="M1128 390l60 24-8 20-54-18z"/>
+    <path d="M1068 462l-20 58h26l16-44 14 44h26l-16-58z"/>
+    <path d="M1062 344l40-16 14 22-46 12z"/>
+  </g>
+  <g fill="#198754" opacity=".5">
+    <path d="M0 640h1600v60H0z"/>
+  </g>
+  <g fill="#f08a24" opacity=".85">
+    <circle cx="960" cy="470" r="6"/>
+    <circle cx="990" cy="470" r="6"/>
+    <circle cx="1020" cy="470" r="6"/>
+  </g>
+</svg>
