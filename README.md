@@ -420,6 +420,32 @@ php artisan serve
 - वेबसाइट: `http://127.0.0.1:8000`
 - प्रशासन पैनल: `http://127.0.0.1:8000/admin`
 
+### डिप्लॉयमेंट (सर्वर पर कॉन्फ़िगरेशन)
+
+Repository में **कभी `.env` commit नहीं होती** — इसलिए GitHub push protection उसे रोक देता है (यह सही व्यवहार है)। सर्वर पर कॉन्फ़िगरेशन इस तरह दिया जाता है:
+
+```bash
+git clone https://github.com/akashkumar7313/maku_union_laravel.git
+cd maku_union_laravel
+composer install
+cp .env.example .env        # .env.example में सभी 65 कुंजी पहले से मौजूद हैं
+php artisan key:generate     # APP_KEY यहाँ बनेगा
+php artisan migrate --seed
+php artisan storage:link
+```
+
+उसके बाद **सीक्रेट मान सर्वर पर** भरें — होस्टिंग के environment-variables पैनल में (Laravel Cloud / Railway / Render / cPanel / VPS) या सीधे सर्वर की `.env` फ़ाइल में:
+
+| कुंजी | कहाँ से लें | संवेदनशीलता |
+| --- | --- | --- |
+| `APP_KEY` | `php artisan key:generate` | **बहुत** — आधार नंबर इसी से एन्क्रिप्ट होते हैं |
+| `CASHFREE_SECRET_KEY` | Cashfree Dashboard | **बहुत** — लीव मोड में भुगतान तक पहुँच |
+| `ADMIN_PASSWORD` | स्वयं तय करें | **उच्च** — पैनल का लॉगिन |
+| `DB_PASSWORD` | होस्टिंग से | उच्च |
+| `GOOGLE_TRANSLATE_API_KEY` | Google Cloud Console | मध्यम |
+
+> **क्यों `.env` push नहीं होती:** `APP_KEY` सार्वजनिक होने पर कोई भी डेटाबेस डंप से सदस्यों के एन्क्रिप्टेड आधार नंबर डीकोड कर सकता है, तथा signed URL (रसीद/कार्ड) forged बना सकता है। `CASHFREE_SECRET_KEY` सार्वजनिक होने पर भुगतान हेरफेर संभव है। इसीलिए `.env.example` commit होता है (वहाँ कोई सीक्रेट नहीं) और असली मान सर्वर पर रहते हैं।
+
 ### SQLite से MySQL में स्थानांतरण
 
 ```bash
