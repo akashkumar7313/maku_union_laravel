@@ -73,12 +73,12 @@ class ExtendedDemoSeeder extends Seeder
         $password = env('OFFICER_PASSWORD') ?: env('ADMIN_PASSWORD') ?: 'Maku@2026';
 
         $rows = [
-            ['कला प्रसाद यादव', 'officer1@maku.local', 'अधिकारी', '9876504001', true],
-            ['प्रकाश चौहान', 'officer2@maku.local', 'अधिकारी', '9876504002', true],
-            ['सुनील कुमार', 'officer3@maku.local', 'अधिकारी', '9876504003', true],
-            ['ममता देवी', 'officer4@maku.local', 'अधिकारी', '9876504004', true],
-            ['अरुण मिश्र', 'auditor@maku.local', 'अधिकारी', '9876504005', true],
-            ['नीरज सिंह', 'officer5@maku.local', 'अधिकारी', '9876504006', false],
+            ['कला प्रसाद यादव', 'officer1@maku.local', 'officer', '9876504001', true],
+            ['प्रकाश चौहान', 'officer2@maku.local', 'officer', '9876504002', true],
+            ['सुनील कुमार', 'officer3@maku.local', 'officer', '9876504003', true],
+            ['ममता देवी', 'officer4@maku.local', 'officer', '9876504004', true],
+            ['अरुण मिश्र', 'auditor@maku.local', 'officer', '9876504005', true],
+            ['नीरज सिंह', 'officer5@maku.local', 'officer', '9876504006', false],
         ];
 
         $staff = [];

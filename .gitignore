@@ -42,3 +42,10 @@ Thumbs.db
 /storage/framework/views
 /storage/logs
 /bootstrap/cache/*.php
+
+# Local secret dumps / env copies — kabhi commit na karein
+keys
+keys.*
+*.env.txt
+env.txt
+secrets.txt
