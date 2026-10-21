@@ -26,6 +26,7 @@ use App\Models\WorkerCategory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 /**
  * Seeder for a fully populated demo dataset.
@@ -70,7 +71,13 @@ class ExtendedDemoSeeder extends Seeder
      */
     private function seedStaff(): array
     {
-        $password = env('OFFICER_PASSWORD') ?: env('ADMIN_PASSWORD') ?: 'Maku@2026';
+        $password = env('OFFICER_PASSWORD') ?: env('ADMIN_PASSWORD');
+
+        if (empty($password)) {
+            // Koi default credential repository mein kabhi publish nahi hona chahiye.
+            $password = Str::password(16);
+            $this->command?->warn('OFFICER_PASSWORD/ADMIN_PASSWORD सेट नहीं है; अधिकारी खातों हेतु अस्थायी पासवर्ड बनाया गया: '.$password);
+        }
 
         $rows = [
             ['कला प्रसाद यादव', 'officer1@maku.local', 'officer', '9876504001', true],
