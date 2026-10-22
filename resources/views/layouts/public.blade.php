@@ -27,7 +27,7 @@
     @if (filled(setting('search_console_id')))
         <meta name="google-site-verification" content="{{ setting('search_console_id') }}">
     @endif
-    <link rel="icon" href="{{ setting_image_url('site_favicon', 'assets/img/logo.svg') }}">
+    <link rel="icon" href="{{ setting_image_url('site_favicon', 'assets/img/logo.png') }}">
     @if (filled(setting('google_analytics_id')))
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ urlencode(setting('google_analytics_id')) }}"></script>
         <script>
@@ -89,7 +89,7 @@
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
             <a class="brand" href="{{ route('home') }}">
-                <img src="{{ setting_image_url('site_logo', 'assets/img/logo.svg') }}" alt="{{ setting('site_name_hi', 'MAKU') }} लोगो">
+                <img src="{{ setting_image_url('site_logo', 'assets/img/logo.png') }}" alt="{{ setting('site_name_hi', 'MAKU') }} लोगो">
                 <span>
                     <span class="brand-title d-block">{{ setting('site_name_hi', 'मिर्जापुर असंगठित कामगार यूनियन') }}</span>
                     <span class="brand-subtitle d-block">{{ setting('tagline_hi', 'असंगठित एवं निर्माण श्रमिकों के अधिकारों के लिए समर्पित') }}</span>
@@ -155,7 +155,7 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="footer-brand">
-                    <img src="{{ setting_image_url('site_logo', 'assets/img/logo.svg') }}" alt="{{ setting('site_name_hi', 'MAKU') }}">
+                    <img src="{{ setting_image_url('site_logo', 'assets/img/logo.png') }}" alt="{{ setting('site_name_hi', 'MAKU') }}">
                     <div>
                         <strong>{{ setting('site_name_hi', 'मिर्जापुर असंगठित कामगार यूनियन') }}</strong>
                         <span class="d-block small text-white-50">{{ setting('site_short_name', 'MAKU Union') }}</span>

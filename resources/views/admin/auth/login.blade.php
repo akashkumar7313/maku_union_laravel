@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <title>प्रशासक लॉगिन | {{ setting('site_short_name', 'MAKU Union') }}</title>
-    <link rel="icon" href="{{ setting_image_url('site_favicon', 'assets/img/logo.svg') }}">
+    <link rel="icon" href="{{ setting_image_url('site_favicon', 'assets/img/logo.png') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <div class="login-page">
     <div class="login-card">
         <div class="login-head">
-            <img src="{{ setting_image_url('site_logo', 'assets/img/logo.svg') }}" alt="MAKU Union">
+            <img src="{{ setting_image_url('site_logo', 'assets/img/logo.png') }}" alt="MAKU Union">
             <h1>प्रशासन पैनल</h1>
             <p>{{ setting('site_name_hi', 'मिर्जापुर असंगठित कामगार यूनियन') }}</p>
         </div>

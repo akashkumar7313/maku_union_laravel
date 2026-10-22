@@ -12,7 +12,7 @@
                     <div class="membership-card">
                         <div class="card-head">
                             <div class="d-flex align-items-center gap-3">
-                                <img src="{{ setting_image_url('site_logo', 'assets/img/logo.svg') }}" alt="MAKU Union">
+                                <img src="{{ setting_image_url('site_logo', 'assets/img/logo.png') }}" alt="MAKU Union">
                                 <div>
                                     <h2>{{ setting('site_name_hi', 'मिर्जापुर असंगठित कामगार यूनियन') }}</h2>
                                     <div class="meta">{{ setting('affiliation_hi', 'असंगठित श्रमिक संगठन') }}</div>

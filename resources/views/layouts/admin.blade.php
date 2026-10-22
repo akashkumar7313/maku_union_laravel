@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="robots" content="noindex, nofollow">
     <title>@yield('title', 'प्रशासन पैनल') | {{ setting('site_short_name', 'MAKU Union') }}</title>
-    <link rel="icon" href="{{ setting_image_url('site_favicon', 'assets/img/logo.svg') }}">
+    <link rel="icon" href="{{ setting_image_url('site_favicon', 'assets/img/logo.png') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
 
 <aside class="admin-sidebar" id="adminSidebar">
     <a class="admin-brand" href="{{ route('admin.dashboard') }}">
-        <img src="{{ setting_image_url('site_logo', 'assets/img/logo.svg') }}" alt="MAKU Union">
+        <img src="{{ setting_image_url('site_logo', 'assets/img/logo.png') }}" alt="MAKU Union">
         <span>
             <strong>{{ setting('site_short_name', 'MAKU Union') }} प्रशासन</strong>
             <span>{{ setting('site_name_hi', 'मिर्जापुर असंगठित कामगार यूनियन') }}</span>

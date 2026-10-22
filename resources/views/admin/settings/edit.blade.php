@@ -397,7 +397,7 @@
                                 <div class="mb-4">
                                     <label class="form-label" for="logo">मुख्य लोगो</label>
                                     <div class="mb-2 p-2 bg-light rounded text-center">
-                                        <img class="img-fluid" style="max-height: 90px;" src="{{ setting_image_url('site_logo', 'assets/img/logo.svg') }}" alt="वर्तमान लोगो">
+                                        <img class="img-fluid" style="max-height: 90px;" src="{{ setting_image_url('site_logo', 'assets/img/logo.png') }}" alt="वर्तमान लोगो">
                                     </div>
                                     <input class="form-control" id="logo" name="logo" type="file" accept="image/jpeg,image/png,image/webp,image/svg+xml">
                                     <div class="form-text">यह लोगो हेडर, फुटर, एडमिन पैनल, रसीद और सदस्यता कार्ड पर उपयोग होगा। JPG, PNG, WEBP या SVG; अधिकतम 2 MB।</div>

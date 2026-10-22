@@ -26,7 +26,7 @@
                     <div class="card-soft p-4 p-md-5">
                         <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 border-bottom pb-3 mb-3">
                             <div class="d-flex gap-3 align-items-center">
-                                <img src="{{ setting_image_url('site_logo', 'assets/img/logo.svg') }}" alt="MAKU Union" width="64" height="64">
+                                <img src="{{ setting_image_url('site_logo', 'assets/img/logo.png') }}" alt="MAKU Union" width="64" height="64">
                                 <div>
                                     <h2 class="h5 mb-1">{{ setting('site_name_hi', 'मिर्जापुर असंगठित कामगार यूनियन') }}</h2>
                                     <div class="small text-muted">{{ setting('contact_address', 'मिर्जापुर, उत्तर प्रदेश') }}</div>
